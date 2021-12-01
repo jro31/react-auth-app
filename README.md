@@ -10,3 +10,5 @@ Starting from [Create React App](https://github.com/facebook/create-react-app), 
   * Adding a `loggedInStatus` state and passing this through the `<Route>` props to the `<Home>` and `<Dashboard>` components - [Commit link](https://github.com/jro31/react-auth-app/commit/deaad1183cb8e78018e49f72c35161232a4f0dc5)
   * Redirecting the user to the `<Dashboard>` page when their registration is successful - [Commit link](https://github.com/jro31/react-auth-app/commit/82a71e578f57d452b7807333bb864f11881f078a)
   * Updating the `loggedInStatus` and setting the `user` state when a user successfully registers - [Commit link](https://github.com/jro31/react-auth-app/commit/47924435e472896763382d297f5d1c65ee2dfe4a)
+* Part 8 - [Building the Login Component in React JS](https://youtu.be/QoLUB0QkUaE)
+  * Creating a `<Login>` component and allowing users to login from the homepage - [Commit link](https://github.com/jro31/react-auth-app/commit/07804cce5baacb24cd0365bdac60668b90202393)
