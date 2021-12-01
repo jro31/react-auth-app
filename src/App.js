@@ -35,6 +35,11 @@ const App = () => {
     setUser(data.user);
   };
 
+  const handleLogout = () => {
+    setLoggedInStatus('NOT_LOGGED_IN');
+    setUser({});
+  };
+
   useEffect(() => {
     checkLoginStatus();
   }, []);
@@ -47,7 +52,12 @@ const App = () => {
             exact
             path={'/'}
             render={props => (
-              <Home {...props} handleLogin={handleLogin} loggedInStatus={loggedInStatus} />
+              <Home
+                {...props}
+                handleLogin={handleLogin}
+                handleLogout={handleLogout}
+                loggedInStatus={loggedInStatus}
+              />
             )}
           />
           <Route
