@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const Registration = () => {
+const Registration = props => {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('');
   const [enteredPasswordConfirmation, setEnteredPasswordConfirmation] = useState('');
@@ -38,6 +38,11 @@ const Registration = () => {
       .then(response => {
         console.log('🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈');
         console.log(response);
+        if (response.data.status === 'created') {
+          props.handleSuccessfulAuth(response.data);
+        } else {
+          // Do something here
+        }
       })
       .catch(error => {
         console.log('🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅🧅');
