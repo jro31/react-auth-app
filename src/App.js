@@ -7,6 +7,11 @@ const App = () => {
   const [loggedInStatus, setLoggedInStatus] = useState('NOT_LOGGED_IN');
   const [user, setUser] = useState({});
 
+  const handleLogin = data => {
+    setLoggedInStatus('LOGGED_IN');
+    setUser(data.user);
+  };
+
   return (
     <div>
       <BrowserRouter>
@@ -14,7 +19,9 @@ const App = () => {
           <Route
             exact
             path={'/'}
-            render={props => <Home {...props} loggedInStatus={loggedInStatus} />}
+            render={props => (
+              <Home {...props} handleLogin={handleLogin} loggedInStatus={loggedInStatus} />
+            )}
           />
           <Route
             exact

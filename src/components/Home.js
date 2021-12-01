@@ -1,8 +1,8 @@
 import Registration from './auth/Registration';
 
 const Home = props => {
-  const handleSuccessfulAuth = () => {
-    // TODO update parent component
+  const handleSuccessfulAuth = data => {
+    props.handleLogin(data);
     props.history.push('/dashboard');
   };
 
