@@ -12,3 +12,5 @@ Starting from [Create React App](https://github.com/facebook/create-react-app), 
   * Updating the `loggedInStatus` and setting the `user` state when a user successfully registers - [Commit link](https://github.com/jro31/react-auth-app/commit/47924435e472896763382d297f5d1c65ee2dfe4a)
 * Part 8 - [Building the Login Component in React JS](https://youtu.be/QoLUB0QkUaE)
   * Creating a `<Login>` component and allowing users to login from the homepage - [Commit link](https://github.com/jro31/react-auth-app/commit/07804cce5baacb24cd0365bdac60668b90202393)
+* Part 9 - [How to Check if a User is Logged In with React](https://youtu.be/EbUNgXQIqrk)
+  * Check whether a user is logged-in by calling `http://localhost:3001/logged_in` from `useEffect()` in `App.js` - [Commit link](https://github.com/jro31/react-auth-app/commit/856f1b10b03282a3504cca27ee81a650149262fe)
