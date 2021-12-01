@@ -14,3 +14,5 @@ Starting from [Create React App](https://github.com/facebook/create-react-app), 
   * Creating a `<Login>` component and allowing users to login from the homepage - [Commit link](https://github.com/jro31/react-auth-app/commit/07804cce5baacb24cd0365bdac60668b90202393)
 * Part 9 - [How to Check if a User is Logged In with React](https://youtu.be/EbUNgXQIqrk)
   * Check whether a user is logged-in by calling `http://localhost:3001/logged_in` from `useEffect()` in `App.js` - [Commit link](https://github.com/jro31/react-auth-app/commit/856f1b10b03282a3504cca27ee81a650149262fe)
+* Part 10 - [Implementing the Logout Functionality in React](https://youtu.be/PV9FqNEI-go)
+  * Add a `Logout` button in the `<Home>` component, and call the `http://localhost:3001/logout` Rails endpoint when it's clicked, to log the user out - [Commit link](https://github.com/jro31/react-auth-app/commit/e6ff8a6c2e7177b8180ed3a8c2d1f634b537a6e7)
