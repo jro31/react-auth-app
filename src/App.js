@@ -1,14 +1,26 @@
+import { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 
 const App = () => {
+  const [loggedInStatus, setLoggedInStatus] = useState('NOT_LOGGED_IN');
+  const [user, setUser] = useState({});
+
   return (
     <div>
       <BrowserRouter>
         <Switch>
-          <Route exact path={'/'} component={Home} />
-          <Route exact path={'/dashboard'} component={Dashboard} />
+          <Route
+            exact
+            path={'/'}
+            render={props => <Home {...props} loggedInStatus={loggedInStatus} />}
+          />
+          <Route
+            exact
+            path={'/dashboard'}
+            render={props => <Dashboard {...props} loggedInStatus={loggedInStatus} />}
+          />
         </Switch>
       </BrowserRouter>
     </div>
